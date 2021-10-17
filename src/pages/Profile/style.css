@@ -1,0 +1,17 @@
+.profile {
+}
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile__info > img {
+  height: 10rem;
+}
+.profile__editBtn {
+  background: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 0.4rem 0.7rem;
+  margin-top: 1rem;
+}

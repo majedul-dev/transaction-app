@@ -1,0 +1,12 @@
+.banner {
+  position: relative;
+  display: flex;
+  height: 30vh;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.banner > img {
+  position: absolute;
+  height: 100%;
+}

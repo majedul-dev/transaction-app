@@ -1,0 +1,23 @@
+.categories {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.3rem;
+}
+.categories > ul {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.categories > ul > li {
+  list-style: none;
+  padding: 0.3rem 0.5rem;
+}
+.categories > ul > li > a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.categories > ul > li > a:hover {
+  color: #009cb8;
+}
