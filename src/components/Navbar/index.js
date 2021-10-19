@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import "./styles.css";
 import logo from "../../images/logo.png";
 import { AiOutlineSearch } from "react-icons/ai";
-import { BsPlus } from "react-icons/bs";
+import { FiSettings, FiLogOut } from "react-icons/fi";
+import { BsFillFileEarmarkSpreadsheetFill, BsChat } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { GrDown } from "react-icons/gr";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const closePopupProfile = () => setIsOpen(!isOpen);
+
   return (
     <nav className="navbar">
       <div className="container navbar_content">
@@ -22,8 +25,11 @@ const Navbar = () => {
         </form>
         <div className="navbar__right">
           <Link to="/login">Login</Link>
+          <Link to="/chat">
+            <BsChat className="chatIcon" />
+          </Link>
           <div className="navbar--auth">
-            <div onClick={() => setIsOpen(!isOpen)}>
+            <div onClick={closePopupProfile}>
               <img
                 src="https://statics.olx.in/external/base/img/avatar_1.png"
                 className="auth--image"
@@ -32,7 +38,11 @@ const Navbar = () => {
               <GrDown />
             </div>
             <ul className={isOpen ? "active" : ""}>
-              <Link to="/profile" className="auth--modal">
+              <Link
+                to="/profile"
+                className="auth--modal"
+                onClick={closePopupProfile}
+              >
                 <img
                   src="https://statics.olx.in/external/base/img/avatar_1.png"
                   className="auth--image"
@@ -44,15 +54,19 @@ const Navbar = () => {
                   <Link to="">View and edit profile</Link>
                 </div>
               </Link>
-              <li>My Ads</li>
-              <li>Setting</li>
-              <li>Logout</li>
+              <li onClick={closePopupProfile}>
+                <BsFillFileEarmarkSpreadsheetFill /> <span>My Ads</span>
+              </li>
+              <li onClick={closePopupProfile}>
+                <FiSettings /> <span>Setting</span>
+              </li>
+              <li onClick={closePopupProfile}>
+                <FiLogOut /> <span>Logout</span>
+              </li>
             </ul>
           </div>
           <button className="navbar__sellbutton">
-            <Link to="/post">
-              <BsPlus className="plus" /> Sell
-            </Link>
+            <Link to="/post">Exchange</Link>
           </button>
         </div>
       </div>

@@ -6,16 +6,14 @@ const categories = [
   "Cars",
   "Motorcycles",
   "Mobile Phones",
-  "For Sale: House & Apartments",
   "Scooters",
   "Commercial & Other Vehicles",
-  "For Rent: House & Apartments",
 ];
 
 const Categories = () => {
   return (
     <div className="categories">
-      <ul className="container">
+      <ul className="container categories__items">
         <li>
           <Link to="/">ALL CATEGORIES</Link>
         </li>

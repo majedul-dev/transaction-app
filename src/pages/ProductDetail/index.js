@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import "./style.css";
@@ -6,8 +6,13 @@ import { FiHeart } from "react-icons/fi";
 import { GrNext } from "react-icons/gr";
 import productList from "../../data";
 import map from "../../images/staticmap.png";
+import OfferModal from "../../components/OfferModal";
 
 const ProductDetail = ({ match }) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const product = productList.find(
     (product) => product.id === +match.params.productId
   );
@@ -45,6 +50,10 @@ const ProductDetail = ({ match }) => {
               <small>{product.location}</small>
               <small>{product.postedAt}</small>
             </div>
+            <button className="sellerInfo--chatBtn mt-2" onClick={handleShow}>
+              Make Offer
+            </button>
+            <OfferModal show={show} handleClose={handleClose} />
           </div>
           <div className="productdetail__sellerInfo">
             <h3>Seller Description</h3>
@@ -63,7 +72,9 @@ const ProductDetail = ({ match }) => {
                 <GrNext className="user--profile" />
               </Link>
             </div>
-            <button className="sellerInfo--chatBtn">Chat with seller</button>
+            <Link to="/chat" className="sellerInfo--chatBtn text-center">
+              Chat with exchanger
+            </Link>
           </div>
           <div className="productdetail__sellerLocation">
             <h4>Posted in</h4>

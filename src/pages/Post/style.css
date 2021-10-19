@@ -1,0 +1,22 @@
+.post_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.post_card > .card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.post_card > .card-body > div {
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+}
+.post_card > .card-footer {
+  padding: 0;
+}

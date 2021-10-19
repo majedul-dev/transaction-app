@@ -18,7 +18,9 @@ const Profile = () => {
               <h2>John Doe</h2>
               <small>Member since Sep 2020</small>
             </div>
-            <button className="profile__editBtn">Edit Profile</button>
+            <Link to="/edit-profile" className="profile__btn">
+              Edit Profile
+            </Link>
           </div>
         </div>
         <div className="col-md-8">

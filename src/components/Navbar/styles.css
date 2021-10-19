@@ -59,6 +59,11 @@
   align-items: center;
   justify-content: center;
 }
+.navbar__right .chatIcon {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: var(--black-color);
+}
 .navbar--auth {
   position: relative;
   /* padding: 0 1rem; */
@@ -70,7 +75,7 @@
   color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid #ddd;
 }
 .navbar--auth > div {
   /* position: relative; */
@@ -100,12 +105,19 @@
   display: block;
 }
 .navbar--auth > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   padding: 0.7rem 0;
+  padding-left: 2rem;
   text-align: center;
   cursor: pointer;
 }
 .navbar--auth > ul > li:hover {
   background: var(--light-gray);
+}
+.navbar--auth > ul > li > span {
+  margin-left: 2rem;
 }
 .auth--modal {
   display: flex;

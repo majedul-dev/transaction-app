@@ -28,6 +28,7 @@ const productList = [
     image: [iphone2, iphone1],
     description:
       "I phone Model today's Amazing Offer sale just CALLME NOW OR WHATSAAP",
+    exchange: "iPhone 11",
     price: "18,000",
     location: "Marine Hill, Port Blair, Andaman & Nicobar Islands",
     postedAt: "Today",
