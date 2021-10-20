@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import productList from "../../data";
+import { productList } from "../../data";
 import { FiHeart } from "react-icons/fi";
 
 const Profile = () => {
   return (
-    <div className=" profile">
+    <section className="section profile">
       <div className="container row">
         <div className="col-md-4">
           <div className="profile__info">
@@ -58,7 +58,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

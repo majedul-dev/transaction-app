@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.css";
-import Input from "../../components/Input";
-import Button from "../../components/Button";
+import { Input, Button } from "../../components";
 
 const Post = () => {
   return (
-    <div className="container post mt-4">
+    <section className="section container post">
       <h3 className="text-center">Post your ad</h3>
       <div className="row my-5">
         <div className="col-md-12">
@@ -44,7 +43,7 @@ const Post = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

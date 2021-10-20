@@ -48,3 +48,6 @@ select {
   width: 90%;
   margin: 0 auto;
 }
+.section {
+  padding: 2rem 0;
+}

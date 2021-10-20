@@ -4,9 +4,9 @@ import { Carousel } from "react-bootstrap";
 import "./style.css";
 import { FiHeart } from "react-icons/fi";
 import { GrNext } from "react-icons/gr";
-import productList from "../../data";
+import { productList } from "../../data";
 import map from "../../images/staticmap.png";
-import OfferModal from "../../components/OfferModal";
+import { OfferModal } from "../../components";
 
 const ProductDetail = ({ match }) => {
   const [show, setShow] = useState(false);
@@ -18,7 +18,7 @@ const ProductDetail = ({ match }) => {
   );
 
   return (
-    <div className="productdetail">
+    <section className="section productdetail">
       <div className="container row">
         <div className="col-md-8">
           <Carousel className="productdetail__carousel">
@@ -84,7 +84,7 @@ const ProductDetail = ({ match }) => {
           <h5>AD ID {product.id}</h5>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ import img1 from "../../images/products/bike2.jpg";
 
 const UsersProfile = () => {
   return (
-    <div className="profile">
+    <section className="section profile">
       <div className="container">
         <div className="profile__userInfo">
           <img
@@ -41,7 +41,7 @@ const UsersProfile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

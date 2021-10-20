@@ -9,8 +9,9 @@
 }
 
 .navbar_logo {
-  height: 60px;
-  padding: 0.3rem 1rem;
+  /* width: 100px; */
+  height: 70px;
+  /* padding: 0rem 1rem; */
 }
 .navbar_searchForm {
   /* flex: 1; */

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Input from "../../components/Input";
+import { Input } from "../../components";
 import "./style.css";
 
 const EditProfile = () => {
   return (
-    <div className="container editProfile my-5">
+    <section className="container editProfile section">
       <div className="row">
         <div className="col-md-3">
           <h4 className="">Edit Profile</h4>
@@ -48,7 +48,7 @@ const EditProfile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

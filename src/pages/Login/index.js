@@ -1,21 +1,21 @@
 import React from "react";
 import "./style.css";
-import Input from "../../components/Input";
+import { Input, Button } from "../../components";
 import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="container authform">
+    <section className="container section authform">
       <h2>Login to Your Account</h2>
-      <form className="pt-5">
+      <form className="pt-4 ">
         <Input placeholder="Enter Email" type="email" />
         <Input placeholder="Enter Password" type="password" />
-        <Input type="submit" value="Login" />
+        <Button type="submit">Login</Button>
       </form>
-      <p>
+      <p className="mt-3">
         Don't have an account? <Link to="/register">Signup</Link>
       </p>
-    </div>
+    </section>
   );
 };
 
