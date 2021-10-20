@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="navbar--auth">
             <div onClick={closePopupProfile}>
               <img
-                src="https://statics.olx.in/external/base/img/avatar_1.png"
+                src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/0b95339956547f1031c2811b210000bc-1565993205942/c763bee0-f25d-4021-8fa0-73da1ff532fb.JPG"
                 className="auth--image"
                 alt=""
               />
@@ -44,13 +44,13 @@ const Navbar = () => {
                 onClick={closePopupProfile}
               >
                 <img
-                  src="https://statics.olx.in/external/base/img/avatar_1.png"
+                  src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/0b95339956547f1031c2811b210000bc-1565993205942/c763bee0-f25d-4021-8fa0-73da1ff532fb.JPG"
                   className="auth--image"
                   alt=""
                 />
                 <div>
                   <small>Hello</small>
-                  <h3>Majedul Islam</h3>
+                  <h3>Aaqib Munir</h3>
                   <Link to="">View and edit profile</Link>
                 </div>
               </Link>
