@@ -29,7 +29,7 @@ const Chat = () => {
       </div>
       <div className="chat__message">
         <div className="message__header">
-          <h4>majedulpro</h4>
+          <h4>aaqibmunir</h4>
           <small>Last seen 4 hours ago</small>
         </div>
         <div className="message__body">
