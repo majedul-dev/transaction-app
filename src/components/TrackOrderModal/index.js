@@ -1,7 +1,5 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
-import Input from "../Input";
-// import Button from "../Button";
 
 const TrackOrderModal = ({ show, handleClose }) => {
   return (
