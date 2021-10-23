@@ -35,14 +35,6 @@ const Post = () => {
               />
             </div>
             <div className="form-group">
-              <label>Exchange Price</label>
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Exchange price"
-              />
-            </div>
-            <div className="form-group">
               <label>Estimated days of shipping</label>
               <input
                 className="form-control"
