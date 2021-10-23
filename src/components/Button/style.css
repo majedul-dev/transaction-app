@@ -5,6 +5,7 @@
   background: var(--primary-color);
   color: var(--white-color);
   font-weight: 600;
+  text-transform: capitalize;
 }
 .button:hover {
   background: var(--white-color);

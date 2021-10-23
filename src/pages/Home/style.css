@@ -23,6 +23,7 @@
   text-transform: capitalize;
   font-size: 5rem;
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 .hero--content > h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -71,6 +72,7 @@
   font-weight: 600;
   color: var(--black-color);
   margin-bottom: 0.3rem;
+  text-transform: capitalize;
 }
 .product--content > p {
   margin: 0;

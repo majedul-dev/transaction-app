@@ -1,22 +1,21 @@
-.post_card {
+.post > div > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 60%;
-  margin: 0 auto;
-}
-.post_card > .card-body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
-.post_card > .card-body > div {
-  width: 100%;
-  border-bottom: 2px solid #ddd;
-  padding: 1rem 0;
+.post__form {
+  background: var(--white-color);
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  padding: 3rem;
+  margin: 2rem 0;
+  border-radius: var(--border-radius);
 }
-.post_card > .card-footer {
-  padding: 0;
+.post__form > h4 {
+  margin-top: 1rem;
+}
+.post__form > .form-group {
+  margin: 0.8rem 0;
 }

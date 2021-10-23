@@ -5,5 +5,15 @@ import Footer from "./Footer";
 import Input from "./Input";
 import Navbar from "./Navbar";
 import OfferModal from "./OfferModal";
+import TrackOrderModal from "./TrackOrderModal";
 
-export { Banner, Button, Categories, Footer, Input, Navbar, OfferModal };
+export {
+  Banner,
+  Button,
+  Categories,
+  Footer,
+  Input,
+  Navbar,
+  OfferModal,
+  TrackOrderModal,
+};

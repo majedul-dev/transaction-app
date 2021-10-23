@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Button } from "../../components";
-import OfferModal from "../../components/OfferModal";
+import { OfferModal, TrackOrderModal } from "../../components";
 import { Link } from "react-router-dom";
 import { conversations, chatMessages } from "../../data";
 
 const Chat = () => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [offerModalShow, setOfferModalShow] = useState(false);
+  const [TrackModalShow, setTrackModalShow] = useState(false);
+  const handleCloseOffer = () => setOfferModalShow(false);
+  const handleShowOffer = () => setOfferModalShow(true);
+  const handleCloseTrack = () => setTrackModalShow(false);
+  const handleShowTrack = () => setTrackModalShow(true);
   return (
     <section className="chat container section">
       <div className="chat__conversations">
@@ -47,10 +50,12 @@ const Chat = () => {
           <input type="text" placeholder="Type your message..." />
           <div>
             <Button>Send</Button>
-            <Button onClick={handleShow}>Create an Offer</Button>
+            <Button onClick={handleShowOffer}>Send Offer</Button>
+            <Button onClick={handleShowTrack}>Track Order</Button>
           </div>
         </div>
-        <OfferModal show={show} handleClose={handleClose} />
+        <OfferModal show={offerModalShow} handleClose={handleCloseOffer} />
+        <TrackOrderModal show={TrackModalShow} handleClose={handleCloseTrack} />
       </div>
     </section>
   );
